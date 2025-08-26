@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
          number2 = binding.number2text.text.toString().toDoubleOrNull()
         if(number1 !=null && number2 !=null){
             result = number1!! + number2!!
-            binding.resultText.text = "result :${result}"
+            binding.resultText.text = "${result}"
         }else
             binding.resultText.text = "enter number !"
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         number2 = binding.number2text.text.toString().toDoubleOrNull()
         if(number1 !=null && number2 !=null){
             result = number1!! - number2!!
-            binding.resultText.text = "result :${result}"
+            binding.resultText.text = "${result}"
         }else
             binding.resultText.text = "enter number !"
 
